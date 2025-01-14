@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   // ヘッダーの読み込み
-  fetch("/pages/header.html")
+  fetch("../pages/header.html")
     .then((response) => {
       if (!response.ok) {
         throw new Error("Network response was not ok " + response.statusText);
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
   // フッターの読み込み
-  fetch("/pages/footer.html")
+  fetch("../pages/footer.html")
     .then((response) => {
       if (!response.ok) {
         throw new Error("Network response was not ok " + response.statusText);
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   // カードセクション
-  fetch("/pages/card.html")
+  fetch("../pages/card.html")
     .then((response) => {
       if (!response.ok) {
         throw new Error("Network response was not ok " + response.statusText);
